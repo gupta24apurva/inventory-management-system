@@ -95,7 +95,7 @@ useEffect(() => {
 
                 <div className="product-info">
                     <h3 className="name">{product.name}</h3>
-                    <p className="sku">Sku: {product.su}</p>
+                    <p className="sku">Sku: {product.sku}</p>
                     <p className="price">Price: {product.price}</p>
                     <p className="quantity">Quantity: {product.stockQuantity}</p>
                 </div>

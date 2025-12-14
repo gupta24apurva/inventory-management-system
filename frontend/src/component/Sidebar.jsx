@@ -16,7 +16,7 @@ const Sidebar = () => {
       <ul className="nav-links">
         {isAuth && (
           <li>
-            <Link to="/dashboard">Dashboaard</Link>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
         )}
 
@@ -52,7 +52,7 @@ const Sidebar = () => {
 
         {isAuth && (
           <li>
-            <Link to="/sell">Sell</Link>
+            <Link to="/sale">Sale</Link>
           </li>
         )}
 

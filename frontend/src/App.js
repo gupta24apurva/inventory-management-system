@@ -9,7 +9,7 @@ import AddEditSupplierPage from "./pages/AddEditSupplierPage";
 import ProductPage from "./pages/ProductPage";
 import AddEditProductPage from "./pages/AddEditProductPage";
 import PurchasePage from "./pages/PurchasePage";
-import SellPage from "./pages/SellPage";
+import SalePage from "./pages/SalePage";
 import TransactionsPage from "./pages/TransactionsPage";
 import TransactionDetailsPage from "./pages/TransactionDetailsPage";
 import ProfilePage from "./pages/ProfilePage";
@@ -36,7 +36,7 @@ function App() {
 
           {/* ADMIN AND MANAGERS ROUTES */}
         <Route path="/purchase" element={<ProtectedRoute element={<PurchasePage/>}/>}/>
-        <Route path="/sell" element={<ProtectedRoute element={<SellPage/>}/>}/>
+        <Route path="/sale" element={<ProtectedRoute element={<SalePage/>}/>}/>
         <Route path="/transaction" element={<ProtectedRoute element={<TransactionsPage/>}/>}/>
         <Route path="/transaction/:transactionId" element={<ProtectedRoute element={<TransactionDetailsPage/>}/>}/>
 

@@ -3,8 +3,8 @@ import CryptoJS from "crypto-js";
 
 export default class ApiService {
 
-    static BASE_URL = "http://localhost:5050/api";
-    static ENCRYPTION_KEY = "phegon-dev-inventory";
+    static BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5050/api";
+    static ENCRYPTION_KEY = "apurva-ims";
 
 
     //encrypt data using cryptoJs

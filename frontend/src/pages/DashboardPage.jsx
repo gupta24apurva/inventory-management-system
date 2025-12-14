@@ -17,7 +17,6 @@ const DashboardPage = () => {
   const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth() + 1);
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const [selectedData, setSelectedData] = useState("amount");
-  //veruble to store and set transaction data formated for chart display
   const [transactionData, setTransactionData] = useState({});
 
   useEffect(() => {
@@ -44,9 +43,7 @@ const DashboardPage = () => {
 
   const transformTransactionData = (transactions, month, year) => {
     const dailyData = {};
-    //get nimber of dayas in the selected month year
     const daysInMonths = new Date(year, month, 0).getDate();
-    //initilaize each day in the month with default values
     for (let day = 1; day <= daysInMonths; day++) {
       dailyData[day] = {
         day,
@@ -96,7 +93,7 @@ const DashboardPage = () => {
       <div className="dashboard-page">
         <div className="button-group">
           <button onClick={() => setSelectedData("count")}>
-            ToTal No Of Transactions
+            Total No Of Transactions
           </button>
           <button onClick={() => setSelectedData("quantity")}>
             Product Quantity
